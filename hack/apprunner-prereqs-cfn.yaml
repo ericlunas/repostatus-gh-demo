@@ -4,7 +4,7 @@ Resources:
   Table:
     Type: AWS::DynamoDB::Table
     Properties:
-      TableName: repostatus_cache
+      TableName: eric-repostatus_cache
       AttributeDefinitions:
         - AttributeName: repoSlug
           AttributeType: S
@@ -27,7 +27,7 @@ Resources:
             Action: ['sts:AssumeRole']
       Path: /
       Policies:
-        - PolicyName: ddb-access
+        - PolicyName: eric-ddb-access
           PolicyDocument:
             Statement:
             - Effect: Allow
